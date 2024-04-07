@@ -4,6 +4,9 @@
 
 @section('content')
 <div class="container py-5">
+
+  <a class=" d-inline-block mb-3" href="{{route('admin.projects.create')}}">Add new project</a>
+
   <table class="table">
     <thead>
       <tr>
