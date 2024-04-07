@@ -15,6 +15,6 @@ class Project extends Model
         'repository',
         'date_create',
         'last_update',
-        'author',
+        'author'
     ];
 }
