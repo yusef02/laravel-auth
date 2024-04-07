@@ -23,7 +23,10 @@
         <td>{{$project['date_create']}}</td>
         <td>{{$project['last_update']}}</td>
         <td>{{$project['author']}}</td>
-        <td></td>
+        <td>
+          <a href="{{route('admin.projects.show', $project)}}">show</a>
+
+        </td>
       </tr>
       @empty
       <tr>
