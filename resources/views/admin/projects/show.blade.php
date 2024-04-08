@@ -16,6 +16,7 @@
       <span><strong>Last update: </strong>{{ $project->last_update }}</span><br>
     </div>
   </div>
-  <a href="{{ route('admin.projects.index') }}">back to index projects</a>
+  <a href="{{ route('admin.projects.index') }}">back to index projects</a> |
+  <a href="{{route('admin.projects.edit', $project)}}">edit</a>
 </div>
 @endsection

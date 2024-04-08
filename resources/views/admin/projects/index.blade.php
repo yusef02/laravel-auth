@@ -27,7 +27,8 @@
         <td>{{$project['last_update']}}</td>
         <td>{{$project['author']}}</td>
         <td>
-          <a href="{{route('admin.projects.show', $project)}}">show</a>
+          <a href="{{route('admin.projects.show', $project)}}">show</a> |
+          <a href="{{route('admin.projects.edit', $project)}}">edit</a>
 
         </td>
       </tr>
