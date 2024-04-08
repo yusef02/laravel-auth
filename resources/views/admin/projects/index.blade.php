@@ -28,7 +28,12 @@
         <td>{{$project['author']}}</td>
         <td>
           <a href="{{route('admin.projects.show', $project)}}">show</a> |
-          <a href="{{route('admin.projects.edit', $project)}}">edit</a>
+          <a href="{{route('admin.projects.edit', $project)}}">edit</a> |
+          <form class="d-inline-block" action="{{ route('admin.projects.destroy', $project) }}" method="POST">
+            @csrf
+            @method('delete')
+            <button class="btn btn-link p-0">dump</button>
+          </form>
 
         </td>
       </tr>

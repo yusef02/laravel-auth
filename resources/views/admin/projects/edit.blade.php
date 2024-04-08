@@ -39,7 +39,8 @@
     <div class="col-3 mt-3 mb-5">
       <button class=" btn btn-success">Update</button>
     </div>
-    <a href="{{ route('admin.projects.index') }}">back to index projects</a>
+    <a href="{{ route('admin.projects.index') }}">back to index projects</a> |
+
 
   </form>
 

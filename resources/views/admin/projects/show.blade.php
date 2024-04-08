@@ -17,6 +17,11 @@
     </div>
   </div>
   <a href="{{ route('admin.projects.index') }}">back to index projects</a> |
-  <a href="{{route('admin.projects.edit', $project)}}">edit</a>
+  <a href="{{route('admin.projects.edit', $project)}}">edit</a> |
+  <form class="d-inline-block" action="{{ route('admin.projects.destroy', $project) }}" method="POST">
+    @csrf
+    @method('delete')
+    <button class="btn btn-link p-0">dump</button>
+  </form>
 </div>
 @endsection
